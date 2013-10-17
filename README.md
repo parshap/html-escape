@@ -1,10 +1,8 @@
 # html-escape
 
-# html-escape
-
-Escape scape a string to be safe for use in HTML. [All
+Escape a string to be safe for use in HTML by replacing [all
 five](http://www.w3.org/International/questions/qa-escapes#use) reserved
-characters (`&<>'"`) are escaped.
+characters (`&<>'"`) with their respective entity.
 
 # Example
 
