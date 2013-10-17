@@ -1,7 +1,7 @@
 {
   "name": "html-escape",
   "version": "1.0.0",
-  "description": "Escape HTML entities",
+  "description": "Escape reserved HTML characters",
   "main": "index.js",
   "scripts": {
     "test": "tape test.js"
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "html",
+    "html entities",
     "escape",
     "xss"
   ],
