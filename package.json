@@ -1,6 +1,6 @@
 {
   "name": "html-escape",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Escape HTML entities",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "html",
     "escape",
-	"xss"
+    "xss"
   ],
   "author": "Parsha Pourkhomami",
   "license": "Public Domain",
