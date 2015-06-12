@@ -1,6 +1,6 @@
 {
   "name": "html-escape",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Escape reserved HTML characters",
   "main": "index.js",
   "scripts": {
