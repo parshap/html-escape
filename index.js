@@ -2,26 +2,31 @@
 
 /* From Twitter's Hogan.js */
 
-var rAmp = /&/g,
-	rLt = /</g,
-	rGt = />/g,
-	rApos =/\'/g,
-	rQuot = /\"/g,
-	hChars =/[&<>\"\']/;
-
-function coerceToString(val) {
-	return String((val === null || val === undefined) ? '' : val);
-}
+var rAmp = /&/g;
+var rLt = /</g;
+var rGt = />/g;
+var rApos =/\'/g;
+var rQuot = /\"/g;
+var hChars =/[&<>\"\']/;
 
 module.exports = function(str) {
-	str = coerceToString(str);
+  if (str == null) {
+    return str;
+  }
 
-	return hChars.test(str)
-		? str
-			.replace(rAmp,'&amp;')
-			.replace(rLt,'&lt;')
-			.replace(rGt,'&gt;')
-			.replace(rApos,'&#39;')
-			.replace(rQuot, '&quot;')
-		: str;
+  if (typeof str !== "string") {
+    str = String(str);
+  }
+
+  if (hChars.test(String(str))) {
+    return str
+      .replace(rAmp,'&amp;')
+      .replace(rLt,'&lt;')
+      .replace(rGt,'&gt;')
+      .replace(rApos,'&#39;')
+      .replace(rQuot, '&quot;');
+  }
+  else {
+    return str;
+  }
 };
