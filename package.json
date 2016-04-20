@@ -1,7 +1,7 @@
 {
   "name": "html-escape",
   "version": "1.0.2",
-  "description": "Escape reserved HTML characters",
+  "description": "Escape string for use in html",
   "main": "index.js",
   "scripts": {
     "test": "tape test.js"

@@ -1,10 +1,10 @@
 "use strict";
 
-/* From Twitter's Hogan.js */
+// Implementation originally from Twitter's Hogan.js:
+// https://github.com/twitter/hogan.js/blob/master/lib/template.js#L325-L335
 
 var rAmp = /&/g;
 var rLt = /</g;
-var rGt = />/g;
 var rApos =/\'/g;
 var rQuot = /\"/g;
 var hChars =/[&<>\"\']/;
@@ -22,8 +22,7 @@ module.exports = function(str) {
     return str
       .replace(rAmp,'&amp;')
       .replace(rLt,'&lt;')
-      .replace(rGt,'&gt;')
-      .replace(rApos,'&#39;')
+      .replace(rApos,'&apos;')
       .replace(rQuot, '&quot;');
   }
   else {
